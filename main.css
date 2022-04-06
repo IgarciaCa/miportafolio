@@ -1,0 +1,165 @@
+/*GENERAL*/
+[class=titulo_about]{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#7B6DFC;
+    text-align: center;
+}
+
+/*MAIN*/
+
+main div{max-width: 1366px;position: relative;}
+
+#contentSuperior{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    position: relative;
+}
+#contentSuperior .presentacion{
+    width: 100%;
+    position: absolute;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    z-index: 1000;
+}
+
+/*PRESENTACION*/
+#contentSuperior .presentacion{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#contentSuperior .presentacion img{
+    width: 100%;
+    margin-top: 5%;
+}
+#contentSuperior .presentacion div{/*Para centrar el boton y no se salga*/
+    display: flex;
+    width: 100%;
+    bottom: 9%;
+    position: absolute;
+}
+#contentSuperior div a{
+    background-color: white;
+    padding: 2% 4%;
+    border-radius: 20px;
+    color:#7B6DFC; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+#contentSuperior div h1{
+    font-size: 14px;
+}
+#contentSuperior div a:hover{
+    background-color: #FEEB46;
+}
+
+/*FONDO IMG*/
+#contentSuperior .imagenFondo{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#contentSuperior .imagenFondo img{
+    width: 100%;
+}
+
+
+/*InforMe*/
+#inforMe{
+    background-color: #ffffff;
+}
+/*  aboutMe*/
+#inforMe .aboutMe{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding-top: 4%;
+}
+/*Titulo*/
+#inforMe .aboutMe .titulo_about{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+/*Circulo*/
+#inforMe .aboutMe .circle img{
+    max-width: 250px;
+    width: 100%;
+    margin-left: 20%;
+    margin-top: 5%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+/*descript__aboutMe*/
+#inforMe .aboutMe .descrip_aboutMe{
+    font: 100 18px Arial, Helvetica, sans-serif;
+    text-align: justify;
+    grid-column-start:2 ;
+    grid-column-end: 3;
+    margin: 7% 12%;
+}
+/*más sobre mi*/
+#inforMe .aboutMe .descrip_aboutMe a{
+    color:#F1B61A;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#inforMe .aboutMe .descrip_aboutMe a:hover{
+    text-shadow: 0 0 0.1em rgb(255, 196, 0);
+}
+
+/*Tercera Seccion*/
+#inforPlus{
+    background-color: white;
+    margin-bottom: 4%;/*para cambiar la distancia entre el footer y el panel*/
+    padding-bottom: 4%;
+}
+
+
+
+/*LENGUAJES QUE DOMINO*/
+.bar_domino p{margin:0 2% 0 2%;font:bold 13px 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+.bar_domino{
+    display: flex;
+    justify-content: center;
+    margin: 0 10%;
+}
+.container{
+    margin: 0;
+    text-align: right;
+    width: 200px;
+    border: 1px solid #F1B61A;
+    border-radius: 10px;
+}
+.habilidad{
+    font-size: 13px;
+    margin: 0;
+    padding: 1px;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+}
+.html{
+    background-color: #F1B61A;
+    border-radius: 10px;
+    animation: fillhtml 2s forwards;
+}
+@keyframes fillhtml{
+    0%{width: 0;}
+    100%{width: 50%;}
+}
+.css{
+    background-color: #F1B61A;
+    border-radius: 10px;
+    animation: fillcss 2s forwards;
+}
+@keyframes fillcss{
+    0%{width: 0;}
+    100%{width: 50%;}
+}
+.js{
+    background-color: #F1B61A;
+    border-radius: 10px;
+    animation: filljs 2s forwards;
+}
+@keyframes filljs{
+    0%{width: 0;}
+    100%{width: 15%;}
+}

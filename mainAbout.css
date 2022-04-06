@@ -1,0 +1,18 @@
+body{background-color: rgb(238, 238, 238);}
+h1,h2,h3{color:#7B6DFC;}
+span{font-weight: bold;}
+
+main div{max-width: 1366px;background-color: white;}
+#more_about_me{
+    width: 100%;
+    
+}
+#more_about_me .infor{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 48px;
+    text-align: justify;
+    padding: 7% 8% 6% 8%;
+}
+#more_about_me .infor p{
+    font-size: 18px;
+}
